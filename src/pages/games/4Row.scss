@@ -1,0 +1,58 @@
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+
+  th,
+  td {
+    /* width: min(20vw, 15vh); */
+    /* height: min(20vw, 15vh); */
+    width: min(10vw, 10vh);
+    height: min(10vw, 10vh);
+    padding: 1vw;
+    border: 1px solid #181818;
+  }
+}
+
+button {
+  padding: 0.5em 1em;
+  border: 1px solid #181818;
+  background-color: #181818;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: #181818;
+  }
+}
+
+// Progress bar container and animation
+.progress-container {
+  width: calc(min(20vw, 15vh) * 4);
+  height: 10px;
+  background-color: #e0e0e0;
+  margin-top: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #76c7c0; // Color of the progress bar
+  transition: width 1s linear; // Smooth transition of the progress bar
+}
+
+.cell-black {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.cell-red {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f00;
+}
